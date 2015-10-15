@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <script src="javascripts/CityMap.js"></script>
+    <script src="javascripts/toggleOBJECT.js"></script>
+
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <title>CityMap</title>
+
+</head>
+
+
+<!-- <body style="background-image: url(images/WorldMaps/Pattern.jpg)">  -->
+<body>
+
+<!-- __________ __________ __________ boxHeader __________ __________ __________ -->
+<div id="boxHeader" ;
+<!--	opacity: 0.9;                   -->
+<!--    filter: alpha(opacity=90);">        -->
+<div id="logoCityMap"> <a href="/" style="text-decoration: none; color:white"> CITYMAP </a> </div>
+
+
+<button id="signUp"> <a href="/signup" style="text-decoration:none;color: rgb(248,248,248)"> Sign Up </a> </button>
+<button id="logIn" > <a href="/login"  style="text-decoration:none;color: rgb(64,64,64)"> Log In </a></button>
+
+<form style="top: 10px; float:right" style="position: relative; top: 200px; color: black; font-size: 20px" action="/">
+    <span style="color: white"> User: </span>
+    <input style="width: 100px" type="text" name="firstname" value="">
+    <span style="color: white"> Pass: </span>
+    <input style="width: 100px"  type="text" name="lastname" value="">
+</form>
+
+
+</div>
+
+
+<!-- __________ __________ __________ boxContent __________ __________ __________ -->
+<div id="boxContent">
+    <!--  <span> BOX CONTENT </span> -->
+
+    <img style="float: left " src="images/Globe.png" alt="globe" height="250" width="250">
+    <img style="float: right " src="images/Globe.png" alt="globe" height="250" width="250">
+    <span> CONTENT </span>
+
+    <div id="boxSearches" style="position:relative; top: 100px">
+
+
+
+        <input type="text" name="firstname" value="i'm looking for...">
+        <input type="text" name="firstname" value="Dubai">
+        <button> SEARCH </button>
+
+    </div>
+
+
+    <div id="boxAnimation">
+        <div>
+            <!--				<p> ANIMATION </p> -->
+            <div id="animation01" style="background-size: 100% 100%; background-image: url(images/animations/dubai01.jpg)">
+            </div>
+
+            <div id="animation02" style="background-size: 100% 100%; background-image: url(images/animations/dubai02.jpg)">
+
+            </div>
+            <div id="animation03" style="background-size: 100% 100%; background-image: url(images/animations/dubai03.jpg)">
+
+            </div>
+            <div id="animation04" style="background-size: 100% 100%; background-image: url(images/animations/dubai04.jpg)">
+
+            </div>
+            <div id="animation05" style="background-size: 100% 100%; background-image: url(images/animations/dubai05.jpg)">
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="boxes">
+        <!--			<p> Boxes </p> -->
+
+        <div id="box01" onclick="toggleOBJECT('box01','animation01')"
+             style="background-image: url(images/png/01iconfood.png); background-size:100% 100%">
+        </div>
+
+        <div id="box02" onclick="toggleOBJECT('box02','animation02')"
+             style="background-image: url(images/png/02iconcoffee.png); background-size:100% 100%">
+        </div>
+
+        <div id="box03" onclick="toggleOBJECT('box03','animation03')"
+             style="background-image: url(images/png/03iconnightlife.png); background-size:100% 100%">
+        </div>
+
+        <div id="box04" onclick="toggleOBJECT('box04','animation04')"
+             style="background-image: url(images/png/04iconfun.png); background-size:100% 100%">
+        </div>
+
+        <div id="box05" onclick="toggleOBJECT('box05','animation05')"
+             style="background-image: url(images/png/05iconshopping.png); background-size:100% 100%">
+        </div>
+
+    </div>
+
+
+</div>
+
+<!-- __________ __________ __________ boxFooter __________ __________ __________ -->
+<div id="boxFooter">
+    <span style="color:black"> All rights reserved. CITYMAP 2015.
+    <a style="color:blue"> Privacy policy </a> |
+    <a style="color:blue"> Therms of use </a>
+    </span>
+</div>
+
+
+</body>
+</html>

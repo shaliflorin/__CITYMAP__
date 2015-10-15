@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <script src="javascripts/CityMap.js"></script>
+    <script src="javascripts/toggleOBJECT.js"></script>
+
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <title>CityMap</title>
+
+</head>
+
+
+<!-- <body style="background-image: url(images/WorldMaps/Pattern.jpg)">  -->
+<body>
+
+<!-- __________ __________ __________ boxHeader __________ __________ __________ -->
+<div id="boxHeader" ;
+<!--	opacity: 0.9;                   -->
+<!--    filter: alpha(opacity=90);">        -->
+<div id="logoCityMap"> <a href="/" style="text-decoration: none; color:white"> CITYMAP </a> </div>
+
+<button id="signUp"> <a href="/signup" style="text-decoration:none;color: rgb(248,248,248)"> Sign Up </a> </button>
+<button id="logIn" > <a href="/login"  style="text-decoration:none;color: rgb(64,64,64)"> Log In </a></button>
+
+</div>
+
+
+<!-- __________ __________ __________ boxContent __________ __________ __________ -->
+<div id="boxContent">
+
+
+    </br>
+    <p> <%= title %> Page: </p>
+
+    </br>
+    <p> LISTA: <%= comments %> </p>
+
+    <% for (comment in comments){ %>
+
+    <p> User:
+        <%=   comments[comment].title   %>
+    </p>
+    <% } %>
+
+    <p> <%= comments[4].title  %>  </p>
+
+
+
+    </br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!-- __________ __________ __________ boxFooter __________ __________ __________ -->
+<div id="boxFooter">
+    <span> Box Footer </span>
+</div>
+
+
+</body>
+</html>
